@@ -1,7 +1,11 @@
 {% extends 'mainpage/base.html' %}
 {% block content %}
+{% load static %}
 <div class="container">
     <h3>Resume:</h3>
-    <p>This section under development</p>
+    <p>I am now open for job opportunities</p>
+    <p>Become my first IT employer!</p>
+    <p>Please <a href="{% url 'contacts' %}">contact me</a> if you have any suggestions or offers</p><br>
+    <p><a href="{% static 'mainpage/cv_cheremkin_latest.pdf' %}">Download</a> resume in PDF</p>
 </div>
 {% endblock %}
