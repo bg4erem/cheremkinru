@@ -13,3 +13,6 @@ def resume(request):
 
 def contacts(request):
     return render(request, 'mainpage/contacts.html')
+
+def coffee(request):
+    return render(request, 'mainpage/coffee.html')

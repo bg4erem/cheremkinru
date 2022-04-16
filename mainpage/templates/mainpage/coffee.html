@@ -1,0 +1,46 @@
+{% extends 'mainpage/base.html' %}
+{% block content %}
+{% load static %}
+<div class="container">
+    <h3>In case you'd like to buy me a cup of coffee..</h3>
+    <p>Если вы желаете угостить меня чашечкой кофе, вот как можно это сделать:</p>
+    <div class="card">
+        <h5 class="card-header">Kaspi.kz</h5>
+        <div class="card-body">
+          <h5 class="card-title">Kaspi перевод</h5>
+          <p class="card-text">Любая сумма на ваше усмотрение</p>
+          <h6 class="card-text" id="kaspi">+77051935877</h6>
+          <a href="#" class="btn btn-primary" onclick="CopyToClipboard('kaspi')">Скопировать номер телефона</a>
+        </div>
+      </div></br>
+    <div class="card">
+        <h5 class="card-header">Система быстрых платежей</h5>
+        <div class="card-body">
+          <h5 class="card-title">СБП - система быстрых платежей (для карт РФ)</h5>
+          <p class="card-text">Любая сумма на ваше усмотрение. Мои банки: Сбер, Тинькофф, ВТБ</p>
+          <h6 class="card-text" id="sbp">+79245632198</h6>
+          <a href="#" class="btn btn-primary" onclick="CopyToClipboard('sbp')">Скопировать номер телефона</a>
+        </div>
+    </div></br>
+    <div class="card">
+        <h5 class="card-header">Угостить кофе оффлайн</h5>
+        <div class="card-body">
+          <h5 class="card-title">Любое кафе или бар города</h5>
+          <p class="card-text">Буду рад новым знакомствам! Сейчас я нахожусь в Астане, но лучше уточнить :)</p>
+          <a href="https://cheremkin.ru/contacts" class="btn btn-primary">Все контакты</a>
+        </div>
+    </div></br>
+    <h3>Спасибо!</h3>
+    <script>
+        function CopyToClipboard(id) {
+            var r = document.createRange();
+            r.selectNode(document.getElementById(id));
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(r);
+            document.execCommand('copy');
+            window.getSelection().removeAllRanges();
+        }
+    </script>
+
+</div>
+{% endblock %}
