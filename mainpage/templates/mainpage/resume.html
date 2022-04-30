@@ -3,9 +3,107 @@
 {% load static %}
 <div class="container">
     <h3>Resume:</h3>
-    <p>I am now open for job opportunities</p>
-    <p>Become my first IT employer!</p>
-    <p>Please <a href="{% url 'contacts' %}">contact me</a> if you have any suggestions or offers</p><br>
-    <p><a href="{% static 'mainpage/cv_cheremkin_latest.pdf' %}">Download</a> resume in PDF</p>
+    <div>
+        <a href="{% static 'mainpage/cv_cheremkin_latest.pdf' %}" class="btn btn-primary">Download PDF resume</a>
+    </div></br>
+
+    <div class="card">
+        <div class="card-header">
+          Basic Information
+        </div>
+        <div class="card-body">
+            <table class="table table-sm">
+                <tbody>
+                    <tr>
+                        <th scope="row">Full Name</th>
+                        <td>Andrey Cheremkin</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Current Location</th>
+                        <td>Nur-Sultan, Kazakhstan</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Birthdate</th>
+                        <td>Nov 26,1995</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Interested in:</th>
+                        <td>Python Development, Data Analytics/Engineering</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div></br>
+
+    <div class="card">
+        <div class="card-header">
+          Work Experience
+        </div>
+        <div class="card-body">
+            <table class="table table-sm">
+                <tbody>
+                    <tr>
+                        <th scope="row">02.2022-03.2022</th>
+                        <td>Service Desk Engineer, ICL Services</br>Kaliningrad. 2 nd line Service Desk Engineer for ICL Services client - Yum Restaurants Russia</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11.2019-12.2021</th>
+                        <td>Sales and Logistics Manager, DV Energy</br>Yakutsk. Managing customer orders of equipment and spare parts. Working with US based supplier.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">05.2019-08.2019</th>
+                        <td>Community Support Manager, Zenith Entertainment</br>Singapore. Supporting new product launch (mobile app)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">09.2017-01.2019</th>
+                        <td>Listing Manager, Platinum Fund</br>Asia (HK, Singapore). Supporting customers with launching their equities (crypto) on exchanges. Managing partnerships with exchanges.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">07.2013-08.2017</th>
+                        <td>Direct Sales Agent, Transtelekom</br>Yakutsk. Promoting ISP and TV services to residents of Yakutsk. Successfully leading team of agents.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div></br>
+
+    <div class="card">
+        <div class="card-header">
+          Education
+        </div>
+        <div class="card-body">
+            <table class="table table-sm">
+                <tbody>
+                    <tr>
+                        <th scope="row">2022</th>
+                        <td>Udemy Web Courses</br>Python Course, Django Courses, ML Courses</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2022</th>
+                        <td>Geekbrains</br>Data Science - Python, ETL/ELT, Hadoop, Spark</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2019</th>
+                        <td>North-Eastern Federal Univercity, Yakutsk</br>Industrical Safety</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2017</th>
+                        <td>North-Eastern Federal Univercity, Yakutsk</br>Power Systems Engineering and Electrical Machines</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2017</th>
+                        <td>Myongji University (명지대학교)</br>Project Course (1 month)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2016</th>
+                        <td>The Arctic University of Norway (UiT)</br>Solar Energy and Power Storage, Exchange Studies (6 months)</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div></br>
+
+    <a href="{% static 'mainpage/cv_cheremkin_latest.pdf' %}" class="btn btn-primary">Download PDF resume</a>
 </div>
 {% endblock %}
